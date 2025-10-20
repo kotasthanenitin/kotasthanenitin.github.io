@@ -42,7 +42,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
    late TabController _tabController = TabController(length: 4, vsync: this);
    final ScrollController _scrollController = ScrollController();
-   final Uri _url = Uri.parse('https://www.enterlink.io/');
+   final Uri _url = Uri.parse('https://growthandglory.com/');
 
   int _selectedBackground = 0;
   double _blurIntensity = 20.0;
@@ -529,7 +529,7 @@ Future<void> _launchUrl() async {
                  SizedBox(width:300,child: ExpansionTile(
                   collapsedBackgroundColor: Colors.blueGrey[100], // Color when collapsed
                   backgroundColor: Colors.blueGrey[300],
-                  leading:FaIcon(FontAwesomeIcons.robot,size: 24,color: Colors.white70),
+                  leading:FaIcon(FontAwesomeIcons.dev,size: 24,color: Colors.white70),
                    title: Text('Freelance Development', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),),
                       children: <Widget>[
                           ListTile(title: Text('Freelance Development in Python, Java, and Flutter,Data and AI.', style: TextStyle(color: Colors.white70),),),
@@ -539,7 +539,7 @@ Future<void> _launchUrl() async {
                  SizedBox(width:300,child: ExpansionTile(
                   collapsedBackgroundColor: Colors.blueGrey[100], // Color when collapsed
                   backgroundColor: Colors.blueGrey[300],
-                  leading:FaIcon(FontAwesomeIcons.robot,size: 24,color: Colors.white70),
+                  leading:FaIcon(FontAwesomeIcons.cloudArrowUp,size: 24,color: Colors.white70),
                    title: Text('Cloud Architecture', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),),
                       children: <Widget>[
                           ListTile(title: Text('End2End Cloud Architecture, Data Lake and AI Engineering.', style: TextStyle(color: Colors.white70),),),
@@ -570,14 +570,14 @@ Future<void> _launchUrl() async {
               color: Colors.white,
             ),
           ),
-          SizedBox(width:500,height:100,child: Text(
+          SizedBox(width:600,height:200,child: Text(
             'Passionate Programmer and Architect with expertise in AWS,Python,Rust, Java, Flutter, and AI technologies. Dedicated to driving innovation and delivering impactful solutions. I have 25 years of Solution Architecture experience.',
             style: const TextStyle(color: Colors.white70,fontSize: 16,
-              fontWeight: FontWeight.bold,),
-            maxLines: 15, // Limit to 2 lines
+            fontWeight: FontWeight.bold,),
+            maxLines: 5 // Limit to 2 lines
             //overflow: TextOverflow.ellipsis,
           ),),
-          SizedBox(width:100,height: 20),
+          SizedBox(width:100,height: 5),
           Container(
                width: 200,
                height: 150,
@@ -630,7 +630,7 @@ Future<void> _launchUrl() async {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           SizedBox(width:300,height: 15),
-          FaIcon(FontAwesomeIcons.school, size: 48, color: Colors.white70),
+          FaIcon(FontAwesomeIcons.schoolCircleCheck, size: 48, color: Colors.white70),
           const SizedBox(width:100,height: 16),
           Text(
             'Training',
@@ -650,7 +650,7 @@ Future<void> _launchUrl() async {
               backgroundColor: Colors.blueGrey[300],
               leading:FaIcon(FontAwesomeIcons.codiepie,size: 24,color: Colors.white70),
               title: Text(
-                'Programming Langueges',
+                'Programming Languages',
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -686,7 +686,7 @@ Future<void> _launchUrl() async {
             SizedBox(width:300,child: ExpansionTile(
               collapsedBackgroundColor: Colors.blueGrey[100], // Color when collapsed
               backgroundColor: Colors.blueGrey[300],
-              leading:FaIcon(FontAwesomeIcons.database,size: 24,color: Colors.white70),
+              leading:FaIcon(FontAwesomeIcons.bahai,size: 24,color: Colors.white70),
               title: Text(
                 'Data Science & AI Engineering',
                 style: TextStyle(
@@ -705,7 +705,7 @@ Future<void> _launchUrl() async {
                   ),
                 ),
                 ListTile(
-                  leading:FaIcon(FontAwesomeIcons.robot,size: 24,color: Colors.white70),
+                  leading:FaIcon(FontAwesomeIcons.rocket,size: 24,color: Colors.white70),
                   title: Text(
                     'AI & ML Engineering',
                      style: TextStyle(color: Colors.white70),
@@ -745,10 +745,10 @@ Future<void> _launchUrl() async {
           ),
           const SizedBox(height: 8),
           Text(
-            'Content for $title tab',
+            'Trusted Partners and Clients',
             style: const TextStyle(color: Colors.white70),
           ),
-          GlassMorphismButton(onPressed: _launchUrl, child: Text('enterlink.io')),
+          GlassMorphismButton(onPressed: _launchUrl, child: Text('Growth & Glory Consulting')),
         ],
       ),
     );
